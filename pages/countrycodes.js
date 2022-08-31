@@ -1211,15 +1211,13 @@ const CountryCodes = () => {
 
   return (
     <>
-      <option data-countryCode="IN" value="+91" selected>
-        India (+91)
-      </option>
+      <option value="+91">India (+91)</option>
       {countryCodes.map((countryCode) => {
         return (
           <option
-            data-countryCode={countryCode.code}
+            // data-countryCode={countryCode.code}
             value={countryCode.dial_code}
-            key={countryCode.dial_code}
+            key={countryCode.code}
           >
             {countryCode.name}({countryCode.dial_code})
           </option>

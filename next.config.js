@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
   images: {
     loader: 'akamai',
-    path: '',
+    path: '/',
   },
   exportPathMap: async (
     defaultPathMap,
@@ -16,4 +16,8 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+const withPWA = require('next-pwa')({
+  dest: 'public',
+});
+
+module.exports = withPWA(nextConfig);

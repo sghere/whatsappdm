@@ -15,13 +15,14 @@ export default function Home() {
       <Head>
         <title>WhatsAppDM</title>
         <meta name="title" content="WhatsAppDM" />
+        <link rel="manifest" href="manifest.json"></link>
         <meta
           name="description"
           content="WhatsApp Direct Message is an app that can be used to text any number on WhatsApp without saving their number."
         />
         <meta name="keywords" content="WhatsApp, Direct, Message" />
         <meta name="robots" content="index, follow" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
         <meta name="revisit-after" content="1 days" />
         <meta name="author" content="Shubham Mahesh Gaikwad" />
@@ -50,6 +51,7 @@ export default function Home() {
               onChange={(e) => {
                 setselectedCountry(e.target.value);
               }}
+              defaultValue={+91}
             >
               <CountryCodes />
             </select>
@@ -83,8 +85,8 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <div class="container InstructionsWrapper">
-        <div class="Instructions">
+      <div className="container InstructionsWrapper">
+        <div className="Instructions">
           <h1 className="display-5 text-center">Instructions</h1>
           {/* <code> */}
           <ul>
