@@ -1219,6 +1219,7 @@ const CountryCodes = () => {
           <option
             data-countryCode={countryCode.code}
             value={countryCode.dial_code}
+            key={countryCode.dial_code}
           >
             {countryCode.name}({countryCode.dial_code})
           </option>

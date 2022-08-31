@@ -28,7 +28,7 @@ export default function Home() {
               DM
             </a>
           </p>
-          <p class="lead mb-5">
+          <p className="lead mb-5">
             Direct Message on Whatsapp without saving Number
           </p>
 
@@ -43,7 +43,7 @@ export default function Home() {
             >
               <CountryCodes />
             </select>
-            <span class="input-group-text" id="basic-addon1">
+            <span className="input-group-text" id="basic-addon1">
               {selectedCountry}
             </span>
           </div>
@@ -64,8 +64,10 @@ export default function Home() {
           <button
             onClick={() => {
               console.log(url + selectedCountry + mobileno + '?text=Hi');
+              window.location.href =
+                url + selectedCountry + mobileno + '?text=Hi';
             }}
-            class="button-30 mt-3 "
+            className="button-30 mt-3 "
           >
             Say Hi
           </button>
