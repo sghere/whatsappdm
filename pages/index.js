@@ -28,9 +28,10 @@ export default function Home() {
               DM
             </a>
           </p>
-          <p className="lead mb-5">
+          <p className="lead">
             Direct Message on Whatsapp without saving Number
           </p>
+          <p className="mb-5">works best with mobile</p>
 
           <div className="input-group input-group-lg mb-3">
             <select
